@@ -8,14 +8,37 @@
   If you need some CSS for any reason you can put it here.
 */
 .inside{
+
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
 }
 .beerCase{
+  max-width: 16em;
+  //max-height: 20em;
+word-wrap: break-word;
   border: 2px solid black;
  list-style: none;
  margin:.5em;
  padding: .3em;
+}
+h2{
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+h3{
+  text-align: right;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+p{
+  text-align: left;
+  font-size: 1em;
+  font-style: italic;
+}
+img{
+  max-width:10em;
+  max-height:10em;
 }
