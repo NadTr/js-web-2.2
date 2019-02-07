@@ -7,4 +7,15 @@
 /*
   If you need some CSS for any reason you can put it here.
 */
-
+.inside{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.beerCase{
+  border: 2px solid black;
+ list-style: none;
+ margin:.5em;
+ padding: .3em;
+}
