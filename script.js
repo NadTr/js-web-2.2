@@ -20,7 +20,6 @@ async function getoneBeer() {
          let response = await axios.get('https://api.punkapi.com/v2/beers/random') //then attend que await soit fini
 
           var beer= new Array();
-console.log(response.data[0]);
             beer[0] =response.data[0].name;
             beer[1] = response.data[0].tagline;
             beer[2] = response.data[0].first_brewed;
