@@ -7,38 +7,77 @@
 /*
   If you need some CSS for any reason you can put it here.
 */
+body{
+  word-wrap: break-word;
+}
 .inside{
-
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   flex-wrap: wrap;
+  object-position: center;
 }
 .beerCase{
-  max-width: 16em;
-  //max-height: 20em;
-word-wrap: break-word;
+  list-style: none;
+  margin:.5em;
   border: 2px solid black;
- list-style: none;
- margin:.5em;
- padding: .3em;
+  padding: .3em;
+  max-width: 12em;
+  //max-height: 20em;
 }
 h2{
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
 }
+
+.DescrImg{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 h3{
-  text-align: right;
+  text-align: left;
   font-size: 1.2em;
   font-weight: normal;
 }
 p{
-  text-align: left;
+  text-align: justify;
   font-size: 1em;
   font-style: italic;
+  margin-bottom: 1em;
+  margin-right: 1em;
 }
 img{
   max-width:10em;
   max-height:10em;
+  margin:  1em auto auto auto;
+
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

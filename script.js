@@ -27,6 +27,8 @@ async function getallBeers() {
        let li = document.createElement("li");
        li.className="beerCase"
        let h2 = document.createElement("h2");
+       let descrImg = document.createElement("div");
+       descrImg.className="DescrImg"
        let h3 = document.createElement("h3");
        let p = document.createElement("p");
        let img= new Image();
@@ -37,10 +39,11 @@ async function getallBeers() {
        h2.appendChild(beerName);
        h3.appendChild(beerTag);
        p.appendChild(beerBrew);
+       descrImg.appendChild(img);
+       descrImg.appendChild(p);
        li.appendChild(h2);
        li.appendChild(h3);
-       li.appendChild(p);
-       li.appendChild(img);
+       li.appendChild(descrImg);
        inside.appendChild(li);
       }
     }
